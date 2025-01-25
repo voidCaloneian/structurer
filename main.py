@@ -18,6 +18,5 @@ def main():
     for category, total in category_sales.items():
         print(f"{category}: {total:.2f}")
 
-
-if __name__ == 'main':
+if __name__ == '__main__':
     main()
