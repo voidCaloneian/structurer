@@ -93,24 +93,3 @@ def process_file(file_path: str) -> Tuple[Dict[str, int], Dict[str, float]]:
                 print(f"\nОшибка при обработке файла: {e}")
 
     return category_counts, category_sales
-
-
-def main():
-    """
-    Основная функция программы.
-    """
-    file_path = 'f.json'
-    category_counts, category_sales = process_file(file_path)
-
-    # Выводим результаты
-    print("\nКоличество предметов по категориям:")
-    for category, count in category_counts.items():
-        print(f"{category}: {count}")
-
-    print("\nОбщая сумма продаж по категориям:")
-    for category, total in category_sales.items():
-        print(f"{category}: {total:.2f}")
-
-
-if __name__ == '__main__':
-    main()

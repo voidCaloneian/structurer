@@ -1,4 +1,4 @@
-from src.main import process_file
+from src.structurer import process_file
 
 
 data_file_path = 'src/data.json'
@@ -19,5 +19,5 @@ def main():
         print(f"{category}: {total:.2f}")
 
 
-if __name__ == '__main__':
+if __name__ == 'main':
     main()
